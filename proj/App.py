@@ -18,8 +18,6 @@ def homePage():
         video = yt.streams.filter(only_audio=True).first()
 
         out_file = video.download(output_path=_TEMP_SAVE_PATH)
-
-        base, ext = os.path.splitext(out_file)
         
         file_number = str(len(os.listdir(_TEMP_SAVE_PATH)))
 
