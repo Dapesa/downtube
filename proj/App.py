@@ -1,4 +1,3 @@
-import uuid
 import os
 import time
 from flask import Flask, render_template, redirect, abort, request, send_from_directory
