@@ -14,7 +14,7 @@ pip install flask pytube
 ### Windows (after installing Python3.10+ and pip3+):
 ```
 python3 -m venv venv
-venv/Scripts/activate
+venv\Scripts\activate
 pip install flask pytube
 ```
 
