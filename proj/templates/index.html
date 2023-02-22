@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DownTube by Dapesa (DevDuck)</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+    <style>
+        [data-theme="light"],
+        :root:not([data-theme="dark"]) {
+          --primary: #e53935;
+          --primary-hover: #d32f2f;
+          --primary-focus: rgba(229, 57, 53, 0.125);
+          --primary-inverse: #FFF;
+        }
+        
+        /* Red Dark scheme (Auto) */
+        /* Automatically enabled if user has Dark mode enabled */
+        @media only screen and (prefers-color-scheme: dark) {
+          :root:not([data-theme]) {
+            --primary: #e53935;
+            --primary-hover: #f44336;
+            --primary-focus: rgba(229, 57, 53, 0.25);
+            --primary-inverse: #FFF;
+          }
+        }
+        
+        /* Red Dark scheme (Forced) */
+        /* Enabled if forced with data-theme="dark" */
+        [data-theme="dark"] {
+          --primary: #e53935;
+          --primary-hover: #f44336;
+          --primary-focus: rgba(229, 57, 53, 0.25);
+          --primary-inverse: #FFF;
+        }
+        
+        /* Red (Common styles) */
+        :root {
+          --form-element-active-border-color: var(--primary);
+          --form-element-focus-color: var(--primary-focus);
+          --switch-color: var(--primary-inverse);
+          --switch-checked-background-color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <article data-theme="light">
+            <hgroup>
+                <h1>DownTube</h1>
+                <p><small>Desenvolvido por Davi P.</small></p>
+            </hgroup>
+            <form method="post" action="/">
+                <label for="download-input">URL do Vídeo</label>
+                <input type="url" name="video_link" id="download-input" />
+                <button type="submit">Download</button>
+            </form>
+            <p><small>Esta aplicação não foi criada para rendas monetárias, mas, apenas, para que eu e meus amigos/famílias possamos baixar músicas sem quaisquer dificuldades geradas por outros apps.</small></p>
+            <p><small>Caso necessário, entrar em contato com <a href=mailto:"downtubedevduck@outlook.com">downtubedevduck@outlook.com</a>.</small></p>
+            <hr>
+            <p><small>PS: fiz em 1h, se tiver algum glitch me falem aí no wpp, Sarah ou Willan (ou qualquer pessoa que use isso) :D</small></p>
+        </article>
+    </main>
+</body>
+</html>
