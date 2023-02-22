@@ -1,5 +1,5 @@
 # downtube
-A simple .mp3 YouTube downloader for me and my friends.
+A ridiculous .mp3 YouTube downloader.
 
 # Requirements
 Obviously you need a virtual environment to run this web app, so follow this steps: 
