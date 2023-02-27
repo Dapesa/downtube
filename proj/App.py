@@ -40,5 +40,7 @@ def homePage():
 def download(filename):
     return send_from_directory(_TEMP_SAVE_PATH, filename)
 
+#implement file downloader page with options button in the next update
+
 if __name__ == "__main__":
     app.run(debug=True)
